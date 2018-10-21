@@ -1,4 +1,5 @@
 def flagger(data):
+    
     '''
     (list[][]) -> (int, int, int, int, int, int, int)
     Receives data list and returns the amount of problems in each column
@@ -14,29 +15,19 @@ def flagger(data):
     region_nameCounter=0
     valueCounter=0
 
-<<<<<<< HEAD
     #Loops through each row of data set
-=======
     error_file = open("ERROR.txt", "w+")
 
 
->>>>>>> 454b2f3b13ebf0004482758d94c3298eab49d336
     for i in range(len(data)):
 
         #Checks if scenerio data set is integers
         if (not(data[i][0].isdigit()) or len(data[i][0])>70):
             scenarioCounter=scenarioCounter+1
 
-<<<<<<< HEAD
-            #print("Scanerio: " + str(data[i][0]))
-=======
-        if (not(data[i][0].isdigit())):
-            scenerioCounter=scenerioCounter+1
-
             error_file.write("ERROR_FLAGGED: Row: " + str(i) + " Colomn: 1  |  DATA IS NOT FORMATTED PROPERLY! MUST BE OF TYPE <INT>\n\n")
 
             #print("Scenerio: " + str(data[i][0]))
->>>>>>> 454b2f3b13ebf0004482758d94c3298eab49d336
 
         # Checks if goals data set is letters
         if (not(data[i][1].isalpha()) or len(data[i][0])>70):
@@ -95,8 +86,5 @@ for line in lines:
 
     row.append(line.strip().split(","))
 
-<<<<<<< HEAD
 typeerror_count = flagger(row)
-=======
 print(flagger(row))
->>>>>>> 454b2f3b13ebf0004482758d94c3298eab49d336
