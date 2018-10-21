@@ -1,4 +1,5 @@
 def flagger(data):
+    
     '''
     (list[][]) -> (int, int, int, int, int, int, int)
     Receives data list and returns the amount of problems in each column
@@ -14,15 +15,22 @@ def flagger(data):
     region_nameCounter=0
     valueCounter=0
 
+
     #Loops through each row of data set
     error_file = open("ERROR.txt", "w+")
 
+
+    error_file = open("ERROR.txt", "w+")
+
+
+    #Loops through each row of data set
 
     for i in range(len(data)):
 
         #Checks if scenerio data set is integers
         if (not(data[i][0].isdigit()) or len(data[i][0])>70):
             scenarioCounter=scenarioCounter+1
+
 
             #print("Scanerio: " + str(data[i][0]))
         if (not(data[i][0].isdigit())):
