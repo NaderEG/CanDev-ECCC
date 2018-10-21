@@ -15,10 +15,10 @@ def flagger(data):
     region_nameCounter=0
     valueCounter=0
 
-    #Loops through each row of data set
+
     error_file = open("ERROR.txt", "w+")
 
-
+    #Loops through each row of data set
     for i in range(len(data)):
 
         #Checks if scenerio data set is integers
